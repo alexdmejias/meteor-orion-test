@@ -1,0 +1,14 @@
+<template name="blogSingle">
+	<h1>{{title}}</h1>
+	<a href="/blog">back to archive</a>
+	slideshow images down below
+	<div class="container">
+		<div id="carousel">
+			{{#each slideshow.images}}
+				<div>
+					<img src="{{image.url}}" alt="{{caption}}">
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</template>
